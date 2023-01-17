@@ -10,9 +10,9 @@
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>sb-tests</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0-RC1</version>
 	<name>sb-tests</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Tests project for Spring MVC</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -32,6 +32,11 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
 		</dependency>
 
 		<dependency>
