@@ -6,9 +6,8 @@
 </head>
 <body>
 
-    <main th:object="${hello}" layout:fragment="dynamic-body">
-        <p>E-mail: <span th:text="*{email}"></span></p>
-        <p>Senha: <span th:text="*{senha}"></span></p>
+    <main layout:fragment="dynamic-body">
+        <p>Opa: <span th:text="${hello}"></span></p>
     </main>
     
 </body>

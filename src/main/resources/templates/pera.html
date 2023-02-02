@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pera</title>
+</head>
+<body th:object="${user}">
+    <form action="#" method="POST"
+    th:action="@{/pera}">
+        <input type="text" th:field="*{email}">
+        <input type="text" th:field="*{senha}">
+        <input type="submit" value="">
+    </form>
+    <p>Email: <span th:text="*{email}"></span></p>
+    <p>Senha: <span th:text="*{senha}"></span></p>
+</body>
+</html>

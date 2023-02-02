@@ -9,11 +9,9 @@
     <main th:object="${user}" layout:fragment="dynamic-body">
         <form action="#" method="POST" th:action="@{/form}">
             <p> E-mail: <input type="email" th:field="*{email}"> </p>
-            <p> Senha: <input type="password" th:field="*{senha}"> </p>
+            <p> Senha: <input type="text" th:field="*{senha}"> </p>
             <input type="submit" value="Send it">
         </form>
-        <p>E-mail: <span th:text="*{email}"></span></p>
-        <p>Senha: <span th:text="*{senha}"></span></p>
     </main>
     
 </body>
